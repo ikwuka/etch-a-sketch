@@ -32,7 +32,7 @@ function randomColor() {
 function clearSketchPad() {
   let pixelSize;
   do {
-    pixelSize = parseInt(prompt("Number of squares per side? (Limit 1-100)"));
+    pixelSize = parseInt(prompt("How many number of squares do you wish to play per side? (1-100)"));
   } while (pixelSize < 1 || pixelSize > 100 || Number.isNaN(pixelSize));
   const existingSquares = document.querySelectorAll(".square");
   existingSquares.forEach((element) => {
