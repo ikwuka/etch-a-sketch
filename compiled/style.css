@@ -1,14 +1,13 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 100%;
 }
 
 *,
 *::after,
 *::before {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
   padding: 0;
   margin: 0;
 }
@@ -16,12 +15,14 @@ html {
 body {
   font-size: 1rem;
   font-family: sans-serif;
-  background-color: whitesmoke;
+  background-color: rgba(255, 255, 255, 0.932);
 }
 
 main h1 {
   text-align: center;
   margin: 0.5rem auto;
+  font-weight: bold;
+  color: orangered;
 }
 
 main .menu {
@@ -39,9 +40,10 @@ main .menu button {
   border-radius: 3px;
   padding: 0.5rem 1rem;
   font-size: 0.7rem;
-  background-color: #05a;
+  background-color: green;
   color: #fff;
   cursor: pointer;
+  font-weight: bold;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }

@@ -1,24 +1,30 @@
 html {
   box-sizing: border-box;
-  font-size: 100%;
 }
+
 *,
 *::after,
 *::before {
-  box-sizing: border-box;
+  box-sizing: inherit;
   padding: 0;
   margin: 0;
 }
+
 body {
   font-size: 1rem;
   font-family: sans-serif;
-  background-color: whitesmoke;
+  background-color: rgba(255, 255, 255, 0.932);
 }
+
 main {
+ 
   h1 {
     text-align: center;
     margin: 0.5rem auto;
+    font-weight: bold;
+    color: orangered;
   }
+  
   .menu {
     display: flex;
     justify-content: center;
@@ -28,27 +34,32 @@ main {
       border-radius: 3px;
       padding: 0.5rem 1rem;
       font-size: 0.7rem;
-      background-color: #05a;
+      background-color: green;
       color: #fff;
       cursor: pointer;
+      font-weight: bold;
       transition: all 300ms ease-in-out;
+      
       &:hover {
         transform: scale(1.02);
       }
     }
   }
 }
+
 .containerTwo {
   display: grid;
   width: 400px;
   height: 400px;
   margin: 1rem auto;
   border: 1px solid #000;
+ 
   .square {
     border: 0.5px solid #000;
     opacity: 1;
     transition: all 700ms ease-in-out;
   }
+ 
   .deleting {
     border: 0.01px solid rgba($color: #000000, $alpha: 0);
     opacity: 0;
